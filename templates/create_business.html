@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}
+Create Business
+{% endblock %}
+
+{% block content %}
+    <h1>Create Business</h1>
+    <form method="POST" action="{{ url_for('create_business_nouser') }}">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="number">Card Number</label>
+            <input type="text" id="number" name="card_number" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="exp_month">Expiry Month</label>
+            <input type="text" id="exp_month" name="exp_month" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="exp_year">Expiry Year</label>
+            <input type="text" id="exp_year" name="exp_year" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" name="cvc" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+{% endblock %}

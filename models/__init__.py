@@ -1,0 +1,1 @@
+from .sharedroomimage import SharedRoomImage
